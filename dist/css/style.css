@@ -84,6 +84,106 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+/* Diseño general de la página */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabecera */
+header {
+  background-image: url("../img/header.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* Menú de navegación */
+nav {
+  background-color: #b22222;
+  padding: 16px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  flex: 1;
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Botones */
+button {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8b0000;
+}
+
+/* Enlaces dentro del contenido */
+main a {
+  color: #b22222;
+}
+
+/* Pie de página */
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: auto;
+}
+
+/* Adaptar el diseño a pantallas pequeñas */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 12px;
+  }
+
+  main {
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+  }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -172,8 +272,8 @@ textarea {
 }
 
 @media print,
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -184,6 +284,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -243,4 +344,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-

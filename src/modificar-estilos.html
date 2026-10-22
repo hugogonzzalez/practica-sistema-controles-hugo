@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modificar estilos CSS</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Práctica Git Flow</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modificar-contenido.html">Modificar contenido HTML</a>
+        <a href="modificar-estilos.html">Modificar estilos CSS</a>
+        <a href="modificar-atributos.html">Modificar atributos HTML</a>
+    </nav>
+
+    <main>
+        <h2>Modificar estilos CSS</h2>
+
+        <p id="texto">
+            Pulsa el botón para cambiar el estilo de este texto.
+        </p>
+
+        <!-- Cambiamos el color y el tamaño del texto con JavaScript -->
+        <button type="button"
+            onclick="document.getElementById('texto').style.color = 'red'; document.getElementById('texto').style.fontSize = '24px';">
+            Cambiar estilo
+        </button>
+
+        <h3>Explicación del código</h3>
+
+        <p>
+            getElementById() busca el párrafo por su identificador.
+            La propiedad style permite modificar sus estilos CSS.
+            Al pulsar el botón, el texto cambia a color rojo y aumenta de tamaño.
+        </p>
+    </main>
+
+    <footer>
+        <p>Práctica de Sistemas de Control de Versiones</p>
+    </footer>
+
+</body>
+
+</html>

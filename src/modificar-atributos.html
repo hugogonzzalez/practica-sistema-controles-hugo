@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modificar atributos HTML</title>
+    <link rel="stylesheet" href="../dist/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Práctica Git Flow</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modificar-contenido.html">Modificar contenido HTML</a>
+        <a href="modificar-estilos.html">Modificar estilos CSS</a>
+        <a href="modificar-atributos.html">Modificar atributos HTML</a>
+    </nav>
+
+    <main>
+        <h2>Modificar atributos HTML</h2>
+
+        <p>Vamos a cambiar el atributo href de este enlace.</p>
+
+        <a id="enlace" href="https://www.google.com">Enlace original</a>
+
+        <p>
+            <button type="button" onclick="document.getElementById('enlace').href = 'https://www.wikipedia.org'">
+                Cambiar enlace
+            </button>
+        </p>
+
+        <h3>Explicación del código</h3>
+
+        <p>
+            El método getElementById() busca el enlace mediante su id.
+            La propiedad href permite cambiar la dirección a la que lleva.
+            El evento onclick ejecuta el cambio cuando pulsamos el botón.
+        </p>
+    </main>
+
+    <footer>
+        <p>Práctica de Sistemas de Control de Versiones</p>
+    </footer>
+
+</body>
+
+</html>
