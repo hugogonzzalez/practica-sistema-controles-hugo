@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Modificar contenido HTML</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Práctica Git Flow</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="modificar-contenido.html">Modificar contenido HTML</a>
+    </nav>
+
+    <main>
+        <h2>Modificar contenido HTML</h2>
+
+        <p id="demo">Este texto cambiará al pulsar el botón.</p>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML = '¡Hola, JavaScript!'">
+            Cambiar contenido
+        </button>
+
+        <h3>Explicación del código</h3>
+
+        <p>
+            El método getElementById() busca el elemento que tiene el identificador demo.
+            La propiedad innerHTML permite cambiar el contenido de ese elemento.
+            El evento onclick ejecuta el código cuando pulsamos el botón.
+        </p>
+    </main>
+
+    <footer>
+        <p>Práctica de Sistemas de Control de Versiones</p>
+    </footer>
+
+</body>
+
+</html>
